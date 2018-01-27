@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/ -->
+<html lang="fr-FR" prefix="og: http://ogp.me/ns#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://pierre-giraud.fr/xmlrpc.php">
+<meta property="og:title" content="Création d’un menu horizontal simple en HTML et en CSS">
+<meta property="og:type" content="article">
+<meta property="og:description" content="
+
+Aujourd’hui, nous allons apprendre à créer un menu horizontal simple en HTML et en CSS.
+
+Pour ...">
+<meta property="og:url" content="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/">
+<meta property="og:site_name" content="Pierre Giraud">
+<meta property="og:image" content="http://pierre-giraud.fr/wp-content/uploads/2014/11/Menu-Horizontal-HTML-CSS.png">
+
+<!-- This site is optimized with the Yoast SEO plugin v4.9 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Création d'un menu horizontal simple en HTML et en CSS - Pierre Giraud</title>
+<meta name="description" content="TUTORIEL - Apprendre à créer un menu horizontal simple en HTML et en CSS en 20 minutes">
+<link rel="canonical" href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Création d&#39;un menu horizontal simple en HTML et en CSS - Pierre Giraud">
+<meta property="og:description" content="TUTORIEL - Apprendre à créer un menu horizontal simple en HTML et en CSS en 20 minutes">
+<meta property="og:url" content="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/">
+<meta property="og:site_name" content="Pierre Giraud">
+<meta property="article:tag" content="menu css">
+<meta property="article:tag" content="menu horizontal css">
+<meta property="article:tag" content="menu horizontal html">
+<meta property="article:tag" content="menu horizontal html css">
+<meta property="article:tag" content="menu html">
+<meta property="article:tag" content="menu html css">
+<meta property="article:section" content="Articles">
+<meta property="article:published_time" content="2014-12-15T20:00:19+00:00">
+<meta property="article:modified_time" content="2015-01-05T15:28:35+00:00">
+<meta property="og:updated_time" content="2015-01-05T15:28:35+00:00">
+<meta property="og:image" content="http://pierre-giraud.fr/wp-content/uploads/2014/11/Menu-Horizontal-HTML-CSS.png">
+<meta property="og:image:width" content="250">
+<meta property="og:image:height" content="250">
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="http://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="http://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Pierre Giraud » Flux" href="http://pierre-giraud.fr/feed/">
+<link rel="alternate" type="application/rss+xml" title="Pierre Giraud » Flux des commentaires" href="http://pierre-giraud.fr/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Pierre Giraud » Création d’un menu horizontal simple en HTML et en CSS Flux des commentaires" href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/feed/">
+		<script src="./Création d&#39;un menu _files/all.js.téléchargement" id="fbjssdk"></script><script src="./Création d&#39;un menu _files/plusone.js.téléchargement" id="gplus1js" gapi_processed="true"></script><script src="./Création d&#39;un menu _files/widgets.js.téléchargement" id="tweetjs"></script><script src="./Création d&#39;un menu _files/cb=gapi.loaded_1" async=""></script><script src="./Création d&#39;un menu _files/cb=gapi(1).loaded_0" async=""></script><script type="text/javascript" async="" src="./Création d&#39;un menu _files/plusone.js.téléchargement" gapi_processed="true"></script><script src="./Création d&#39;un menu _files/ca-pub-8384266137058067.js.téléchargement"></script><script async="" src="./Création d&#39;un menu _files/analytics.js.téléchargement"></script><script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/pierre-giraud.fr\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.2"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./Création d&#39;un menu _files/wp-emoji-release.min.js.téléchargement" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="contact-form-7-css" href="./Création d&#39;un menu _files/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="tie-style-css" href="./Création d&#39;un menu _files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="Droid+Sans-css" href="./Création d&#39;un menu _files/css" type="text/css" media="all">
+<script type="text/javascript" src="./Création d&#39;un menu _files/jquery.js.téléchargement"></script>
+<script type="text/javascript" src="./Création d&#39;un menu _files/jquery-migrate.min.js.téléchargement"></script>
+<link rel="https://api.w.org/" href="http://pierre-giraud.fr/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://pierre-giraud.fr/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://pierre-giraud.fr/wp-includes/wlwmanifest.xml"> 
+<link rel="shortlink" href="http://pierre-giraud.fr/?p=450">
+<link rel="alternate" type="application/json+oembed" href="http://pierre-giraud.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fpierre-giraud.fr%2Fcreation-dun-menu-horizontal-simple-en-html-en-css%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://pierre-giraud.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fpierre-giraud.fr%2Fcreation-dun-menu-horizontal-simple-en-html-en-css%2F&amp;format=xml">
+<link rel="shortcut icon" href="http://pierre-giraud.fr/wp-content/uploads/2014/04/Favicon_Pierre_Giraud.png" title="Favicon">	
+<!--[if IE]>
+<script type="text/javascript">jQuery(document).ready(function (){ jQuery(".menu-item").has("ul").children("a").attr("aria-haspopup", "true");});</script>
+<![endif]-->	
+<!--[if lt IE 9]>
+<script src="http://pierre-giraud.fr/wp-content/themes/sahifa/js/html5.js"></script>
+<script src="http://pierre-giraud.fr/wp-content/themes/sahifa/js/selectivizr-min.js"></script>
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" media="all" href="http://pierre-giraud.fr/wp-content/themes/sahifa/css/ie9.css" />
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" media="all" href="http://pierre-giraud.fr/wp-content/themes/sahifa/css/ie8.css" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" media="all" href="http://pierre-giraud.fr/wp-content/themes/sahifa/css/ie7.css" />
+<![endif]-->
+<script type="text/javascript">
+	/* <![CDATA[ */
+	var tievar = {'go_to' : 'Aller vers…'};
+	var tie = {"ajaxurl":"http://pierre-giraud.fr/wp-admin/admin-ajax.php" , "your_rating":"Your Rating:"};
+	/* ]]> */
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<style type="text/css" media="screen"> 
+::-webkit-scrollbar {width: 8px; height:8px; }
+
+body {
+ background-image : url(http://pierre-giraud.fr/wp-content/themes/sahifa/images/patterns/body-bg7.png);background-position: top center;
+}
+	
+</style> 
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://pierre-giraud.fr/wp-content/uploads/2014/04/Favicon_Pierre_Giraud.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://pierre-giraud.fr/wp-content/uploads/2014/04/Favicon_Pierre_Giraud.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://pierre-giraud.fr/wp-content/uploads/2014/04/Favicon_Pierre_Giraud.png">
+<link rel="apple-touch-icon-precomposed" href="http://pierre-giraud.fr/wp-content/uploads/2014/04/Favicon_Pierre_Giraud.png">
+<script src="./Création d&#39;un menu _files/secureAnonymousFramework"></script><link rel="preload" href="./Création d&#39;un menu _files/integrator.js.téléchargement" as="script"><script type="text/javascript" src="./Création d&#39;un menu _files/integrator.js.téléchargement"></script><link rel="preload" href="./Création d&#39;un menu _files/integrator.js(1).téléchargement" as="script"><script type="text/javascript" src="./Création d&#39;un menu _files/integrator.js(1).téléchargement"></script><style type="text/css">* html #li_ui_li_gen_1516222628919_0 a#li_ui_li_gen_1516222628919_0-link{height:1% !important;}#li_ui_li_gen_1516222628919_0{position:relative !important;overflow:visible !important;display:block !important;}#li_ui_li_gen_1516222628919_0 span{-webkit-box-sizing:content-box !important;-moz-box-sizing:content-box !important;box-sizing:content-box !important;}#li_ui_li_gen_1516222628919_0 a#li_ui_li_gen_1516222628919_0-link{border:0 !important;height:20px !important;text-decoration:none !important;padding:0 !important;margin:0 !important;display:inline-block !important;}#li_ui_li_gen_1516222628919_0 a#li_ui_li_gen_1516222628919_0-link:link, #li_ui_li_gen_1516222628919_0 a#li_ui_li_gen_1516222628919_0-link:visited, #li_ui_li_gen_1516222628919_0 a#li_ui_li_gen_1516222628919_0-link:hover, #li_ui_li_gen_1516222628919_0 a#li_ui_li_gen_1516222628919_0-link:active{border:0 !important;text-decoration:none !important;}#li_ui_li_gen_1516222628919_0 a#li_ui_li_gen_1516222628919_0-link:after{content:"." !important;display:block !important;clear:both !important;visibility:hidden !important;line-height:0 !important;height:0 !important;}#li_ui_li_gen_1516222628919_0 #li_ui_li_gen_1516222628919_0-logo{background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-position:0px -593px !important;background-repeat:no-repeat !important;background-color:#0077b5 !important;background-size:initial !important;cursor:pointer !important;border:0 !important;border-right:1px solid #066094 !important;text-indent:-9999em !important;overflow:hidden !important;padding:0 !important;margin:0 !important;position:absolute !important;left:0px !important;top:0px !important;display:block !important;width:20px !important;height:20px !important;float:right !important;border-radius:2px !important;-webkit-border-radius:2px !important;border-top-right-radius:2px !important;border-bottom-right-radius:2px !important;-webkit-border-top-right-radius:2px !important;-webkit-border-bottom-right-radius:2px !important;}#li_ui_li_gen_1516222628919_0 #li_ui_li_gen_1516222628919_0-title{color:#fff !important;cursor:pointer !important;display:block !important;white-space:nowrap !important;float:left !important;margin-left:1px !important;vertical-align:top !important;overflow:hidden !important;text-align:center !important;height:18px !important;padding:0 4px 0 23px !important;border:1px solid #000 !important;border-top-color:#0077b5 !important;border-right-color:#0077b5 !important;border-bottom-color:#0077b5 !important;border-left-color:#0077b5 !important;text-shadow:0 -1px #005887 !important;line-height:20px !important;border-radius:2px !important;-webkit-border-radius:2px !important;border-top-right-radius:2px !important;border-bottom-right-radius:2px !important;-webkit-border-top-right-radius:2px !important;-webkit-border-bottom-right-radius:2px !important;background-color:#0077b5 !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#0077b5), color-stop(100%,#0077b5)) !important; background-image: -webkit-linear-gradient(top, #0077b5 0%, #0077b5 100%) !important;}#li_ui_li_gen_1516222628919_0.hovered #li_ui_li_gen_1516222628919_0-title{border:1px solid #000 !important;border-top-color:#0369a0 !important;border-right-color:#0369a0 !important;border-bottom-color:#0369a0 !important;border-left-color:#0369a0 !important;background-color:#0369a0 !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#0369a0), color-stop(100%,#0369a0)) !important; background-image: -webkit-linear-gradient(top, #0369a0 0%, #0369a0 100%) !important;}#li_ui_li_gen_1516222628919_0.clicked #li_ui_li_gen_1516222628919_0-title, #li_ui_li_gen_1516222628919_0.down #li_ui_li_gen_1516222628919_0-title{color:#fff !important;border:1px solid #000 !important;border-top-color:#066094 !important;border-right-color:#066094 !important;border-bottom-color:#066094 !important;border-left-color:#066094 !important;background-color:#066094 !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#066094), color-stop(100%,#066094)) !important; background-image: -webkit-linear-gradient(top, #066094 0%, #066094 100%) !important;}.IN-shadowed #li_ui_li_gen_1516222628919_0 #li_ui_li_gen_1516222628919_0-title{}.IN-shadowed #li_ui_li_gen_1516222628919_0.hovered #li_ui_li_gen_1516222628919_0-title{}.IN-shadowed #li_ui_li_gen_1516222628919_0.clicked #li_ui_li_gen_1516222628919_0-title, .IN-shadowed #li_ui_li_gen_1516222628919_0.down #li_ui_li_gen_1516222628919_0-title{}#li_ui_li_gen_1516222628919_0 #li_ui_li_gen_1516222628919_0-title-text, #li_ui_li_gen_1516222628919_0 #li_ui_li_gen_1516222628919_0-title-text *{color:#fff !important;font-size:11px !important;font-family:Arial, sans-serif !important;font-weight:bold !important;font-style:normal !important;-webkit-font-smoothing:antialiased !important;display:inline-block !important;background:transparent none !important;vertical-align:top !important;height:18px !important;line-height:20px !important;float:none !important;}#li_ui_li_gen_1516222628919_0 #li_ui_li_gen_1516222628919_0-title-text strong{font-weight:bold !important;}#li_ui_li_gen_1516222628919_0 #li_ui_li_gen_1516222628919_0-title-text em{font-style:italic !important;}#li_ui_li_gen_1516222628919_0.hovered #li_ui_li_gen_1516222628919_0-title-text, #li_ui_li_gen_1516222628919_0.hovered #li_ui_li_gen_1516222628919_0-title-text *{color:#fff !important;}#li_ui_li_gen_1516222628919_0.clicked #li_ui_li_gen_1516222628919_0-title-text, #li_ui_li_gen_1516222628919_0.down #li_ui_li_gen_1516222628919_0-title-text, #li_ui_li_gen_1516222628919_0.clicked #li_ui_li_gen_1516222628919_0-title-text *, #li_ui_li_gen_1516222628919_0.down #li_ui_li_gen_1516222628919_0-title-text *{color:#fff !important;}#li_ui_li_gen_1516222628919_0 #li_ui_li_gen_1516222628919_0-title #li_ui_li_gen_1516222628919_0-mark{display:inline-block !important;width:0px !important;overflow:hidden !important;}.success #li_ui_li_gen_1516222628919_0 #li_ui_li_gen_1516222628919_0-title{color:#fff !important;border-top-color:#0077b5 !important;border-right-color:#0077b5 !important;border-bottom-color:#0077b5 !important;border-left-color:#0077b5 !important;background-color:#0077b5 !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#0077b5), color-stop(100%,#0077b5)) !important; background-image: -webkit-linear-gradient(top, #0077b5 0%, #0077b5 100%) !important;}.success #li_ui_li_gen_1516222628919_0 #li_ui_li_gen_1516222628919_0-title-text, .success #li_ui_li_gen_1516222628919_0 #li_ui_li_gen_1516222628919_0-title-text *{color:#fff !important;}.IN-shadowed .success #li_ui_li_gen_1516222628919_0 #li_ui_li_gen_1516222628919_0-title{}.success #li_ui_li_gen_1516222628919_0.hovered #li_ui_li_gen_1516222628919_0-title{color:#fff !important;border-top-color:#0369a0 !important;border-right-color:#0369a0 !important;border-bottom-color:#0369a0 !important;border-left-color:#0369a0 !important;background-color:#0369a0 !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#0369a0), color-stop(100%,#0369a0)) !important; background-image: -webkit-linear-gradient(top, #0369a0 0%, #0369a0 100%) !important;}.success #li_ui_li_gen_1516222628919_0.hovered #li_ui_li_gen_1516222628919_0-title-text, .success #li_ui_li_gen_1516222628919_0.hovered #li_ui_li_gen_1516222628919_0-title-text *{color:#fff !important;}.success #li_ui_li_gen_1516222628919_0.clicked #li_ui_li_gen_1516222628919_0-title, .success #li_ui_li_gen_1516222628919_0.down #li_ui_li_gen_1516222628919_0-title{color:#fff !important;border-top-color:#066094 !important;border-right-color:#066094 !important;border-bottom-color:#066094 !important;border-left-color:#066094 !important;background-color:#066094 !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#066094), color-stop(100%,#066094)) !important; background-image: -webkit-linear-gradient(top, #066094 0%, #066094 100%) !important;}.success #li_ui_li_gen_1516222628919_0.clicked #li_ui_li_gen_1516222628919_0-title-text, .success #li_ui_li_gen_1516222628919_0.down #li_ui_li_gen_1516222628919_0-title-text, .success #li_ui_li_gen_1516222628919_0.clicked #li_ui_li_gen_1516222628919_0-title-text *, .success #li_ui_li_gen_1516222628919_0.down #li_ui_li_gen_1516222628919_0-title-text *{color:#fff !important;}.IN-shadowed .success #li_ui_li_gen_1516222628919_0.clicked #li_ui_li_gen_1516222628919_0-title, .IN-shadowed .success #li_ui_li_gen_1516222628919_0.down #li_ui_li_gen_1516222628919_0-title{}#li_ui_li_gen_1516222628982_1-container.IN-right {display:inline-block !important;float:left !important;overflow:visible !important;position:relative !important;height:20px !important;padding-left:2px !important;line-height:1px !important;cursor:pointer !important;}#li_ui_li_gen_1516222628982_1.IN-right {display:block !important;float:left !important;height:20px !important;margin-right:4px !important;padding-right:4px !important;background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-color:transparent !important;background-repeat:no-repeat !important;background-position:right -447px !important;}#li_ui_li_gen_1516222628982_1-inner.IN-right {display:block !important;float:left !important;padding-left:8px !important;text-align:center !important;background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-color:transparent !important;background-repeat:no-repeat !important;background-position:0px -426px !important;}#li_ui_li_gen_1516222628982_1-content.IN-right {display:inline !important;font-size:11px !important;color:#4e4e4e !important;font-weight:bold !important;font-family:Arial, sans-serif !important;line-height:20px !important;padding:0 5px 0 5px !important;}#li_ui_li_gen_1516222628982_1-container.IN-empty {display:none !important;}#li_ui_li_gen_1516222628982_1-container.IN-hidden #li_ui_li_gen_1516222628982_1 {display:none !important;}* html #li_ui_li_gen_1516222628989_2 a#li_ui_li_gen_1516222628989_2-link{height:1% !important;}#li_ui_li_gen_1516222628989_2{position:relative !important;overflow:visible !important;display:block !important;}#li_ui_li_gen_1516222628989_2 span{-webkit-box-sizing:content-box !important;-moz-box-sizing:content-box !important;box-sizing:content-box !important;}#li_ui_li_gen_1516222628989_2 a#li_ui_li_gen_1516222628989_2-link{border:0 !important;height:20px !important;text-decoration:none !important;padding:0 !important;margin:0 !important;display:inline-block !important;}#li_ui_li_gen_1516222628989_2 a#li_ui_li_gen_1516222628989_2-link:link, #li_ui_li_gen_1516222628989_2 a#li_ui_li_gen_1516222628989_2-link:visited, #li_ui_li_gen_1516222628989_2 a#li_ui_li_gen_1516222628989_2-link:hover, #li_ui_li_gen_1516222628989_2 a#li_ui_li_gen_1516222628989_2-link:active{border:0 !important;text-decoration:none !important;}#li_ui_li_gen_1516222628989_2 a#li_ui_li_gen_1516222628989_2-link:after{content:"." !important;display:block !important;clear:both !important;visibility:hidden !important;line-height:0 !important;height:0 !important;}#li_ui_li_gen_1516222628989_2 #li_ui_li_gen_1516222628989_2-logo{background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-position:0px -593px !important;background-repeat:no-repeat !important;background-color:#0077b5 !important;background-size:initial !important;cursor:pointer !important;border:0 !important;border-right:1px solid #066094 !important;text-indent:-9999em !important;overflow:hidden !important;padding:0 !important;margin:0 !important;position:absolute !important;left:0px !important;top:0px !important;display:block !important;width:20px !important;height:20px !important;float:right !important;border-radius:2px !important;-webkit-border-radius:2px !important;border-top-right-radius:2px !important;border-bottom-right-radius:2px !important;-webkit-border-top-right-radius:2px !important;-webkit-border-bottom-right-radius:2px !important;}#li_ui_li_gen_1516222628989_2 #li_ui_li_gen_1516222628989_2-title{color:#fff !important;cursor:pointer !important;display:block !important;white-space:nowrap !important;float:left !important;margin-left:1px !important;vertical-align:top !important;overflow:hidden !important;text-align:center !important;height:18px !important;padding:0 4px 0 23px !important;border:1px solid #000 !important;border-top-color:#0077b5 !important;border-right-color:#0077b5 !important;border-bottom-color:#0077b5 !important;border-left-color:#0077b5 !important;text-shadow:0 -1px #005887 !important;line-height:20px !important;border-radius:2px !important;-webkit-border-radius:2px !important;border-top-right-radius:2px !important;border-bottom-right-radius:2px !important;-webkit-border-top-right-radius:2px !important;-webkit-border-bottom-right-radius:2px !important;background-color:#0077b5 !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#0077b5), color-stop(100%,#0077b5)) !important; background-image: -webkit-linear-gradient(top, #0077b5 0%, #0077b5 100%) !important;}#li_ui_li_gen_1516222628989_2.hovered #li_ui_li_gen_1516222628989_2-title{border:1px solid #000 !important;border-top-color:#0369a0 !important;border-right-color:#0369a0 !important;border-bottom-color:#0369a0 !important;border-left-color:#0369a0 !important;background-color:#0369a0 !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#0369a0), color-stop(100%,#0369a0)) !important; background-image: -webkit-linear-gradient(top, #0369a0 0%, #0369a0 100%) !important;}#li_ui_li_gen_1516222628989_2.clicked #li_ui_li_gen_1516222628989_2-title, #li_ui_li_gen_1516222628989_2.down #li_ui_li_gen_1516222628989_2-title{color:#fff !important;border:1px solid #000 !important;border-top-color:#066094 !important;border-right-color:#066094 !important;border-bottom-color:#066094 !important;border-left-color:#066094 !important;background-color:#066094 !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#066094), color-stop(100%,#066094)) !important; background-image: -webkit-linear-gradient(top, #066094 0%, #066094 100%) !important;}.IN-shadowed #li_ui_li_gen_1516222628989_2 #li_ui_li_gen_1516222628989_2-title{}.IN-shadowed #li_ui_li_gen_1516222628989_2.hovered #li_ui_li_gen_1516222628989_2-title{}.IN-shadowed #li_ui_li_gen_1516222628989_2.clicked #li_ui_li_gen_1516222628989_2-title, .IN-shadowed #li_ui_li_gen_1516222628989_2.down #li_ui_li_gen_1516222628989_2-title{}#li_ui_li_gen_1516222628989_2 #li_ui_li_gen_1516222628989_2-title-text, #li_ui_li_gen_1516222628989_2 #li_ui_li_gen_1516222628989_2-title-text *{color:#fff !important;font-size:11px !important;font-family:Arial, sans-serif !important;font-weight:bold !important;font-style:normal !important;-webkit-font-smoothing:antialiased !important;display:inline-block !important;background:transparent none !important;vertical-align:top !important;height:18px !important;line-height:20px !important;float:none !important;}#li_ui_li_gen_1516222628989_2 #li_ui_li_gen_1516222628989_2-title-text strong{font-weight:bold !important;}#li_ui_li_gen_1516222628989_2 #li_ui_li_gen_1516222628989_2-title-text em{font-style:italic !important;}#li_ui_li_gen_1516222628989_2.hovered #li_ui_li_gen_1516222628989_2-title-text, #li_ui_li_gen_1516222628989_2.hovered #li_ui_li_gen_1516222628989_2-title-text *{color:#fff !important;}#li_ui_li_gen_1516222628989_2.clicked #li_ui_li_gen_1516222628989_2-title-text, #li_ui_li_gen_1516222628989_2.down #li_ui_li_gen_1516222628989_2-title-text, #li_ui_li_gen_1516222628989_2.clicked #li_ui_li_gen_1516222628989_2-title-text *, #li_ui_li_gen_1516222628989_2.down #li_ui_li_gen_1516222628989_2-title-text *{color:#fff !important;}#li_ui_li_gen_1516222628989_2 #li_ui_li_gen_1516222628989_2-title #li_ui_li_gen_1516222628989_2-mark{display:inline-block !important;width:0px !important;overflow:hidden !important;}.success #li_ui_li_gen_1516222628989_2 #li_ui_li_gen_1516222628989_2-title{color:#fff !important;border-top-color:#0077b5 !important;border-right-color:#0077b5 !important;border-bottom-color:#0077b5 !important;border-left-color:#0077b5 !important;background-color:#0077b5 !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#0077b5), color-stop(100%,#0077b5)) !important; background-image: -webkit-linear-gradient(top, #0077b5 0%, #0077b5 100%) !important;}.success #li_ui_li_gen_1516222628989_2 #li_ui_li_gen_1516222628989_2-title-text, .success #li_ui_li_gen_1516222628989_2 #li_ui_li_gen_1516222628989_2-title-text *{color:#fff !important;}.IN-shadowed .success #li_ui_li_gen_1516222628989_2 #li_ui_li_gen_1516222628989_2-title{}.success #li_ui_li_gen_1516222628989_2.hovered #li_ui_li_gen_1516222628989_2-title{color:#fff !important;border-top-color:#0369a0 !important;border-right-color:#0369a0 !important;border-bottom-color:#0369a0 !important;border-left-color:#0369a0 !important;background-color:#0369a0 !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#0369a0), color-stop(100%,#0369a0)) !important; background-image: -webkit-linear-gradient(top, #0369a0 0%, #0369a0 100%) !important;}.success #li_ui_li_gen_1516222628989_2.hovered #li_ui_li_gen_1516222628989_2-title-text, .success #li_ui_li_gen_1516222628989_2.hovered #li_ui_li_gen_1516222628989_2-title-text *{color:#fff !important;}.success #li_ui_li_gen_1516222628989_2.clicked #li_ui_li_gen_1516222628989_2-title, .success #li_ui_li_gen_1516222628989_2.down #li_ui_li_gen_1516222628989_2-title{color:#fff !important;border-top-color:#066094 !important;border-right-color:#066094 !important;border-bottom-color:#066094 !important;border-left-color:#066094 !important;background-color:#066094 !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#066094), color-stop(100%,#066094)) !important; background-image: -webkit-linear-gradient(top, #066094 0%, #066094 100%) !important;}.success #li_ui_li_gen_1516222628989_2.clicked #li_ui_li_gen_1516222628989_2-title-text, .success #li_ui_li_gen_1516222628989_2.down #li_ui_li_gen_1516222628989_2-title-text, .success #li_ui_li_gen_1516222628989_2.clicked #li_ui_li_gen_1516222628989_2-title-text *, .success #li_ui_li_gen_1516222628989_2.down #li_ui_li_gen_1516222628989_2-title-text *{color:#fff !important;}.IN-shadowed .success #li_ui_li_gen_1516222628989_2.clicked #li_ui_li_gen_1516222628989_2-title, .IN-shadowed .success #li_ui_li_gen_1516222628989_2.down #li_ui_li_gen_1516222628989_2-title{}#li_ui_li_gen_1516222628995_3-container.IN-right {display:inline-block !important;float:left !important;overflow:visible !important;position:relative !important;height:20px !important;padding-left:2px !important;line-height:1px !important;cursor:pointer !important;}#li_ui_li_gen_1516222628995_3.IN-right {display:block !important;float:left !important;height:20px !important;margin-right:4px !important;padding-right:4px !important;background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-color:transparent !important;background-repeat:no-repeat !important;background-position:right -447px !important;}#li_ui_li_gen_1516222628995_3-inner.IN-right {display:block !important;float:left !important;padding-left:8px !important;text-align:center !important;background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-color:transparent !important;background-repeat:no-repeat !important;background-position:0px -426px !important;}#li_ui_li_gen_1516222628995_3-content.IN-right {display:inline !important;font-size:11px !important;color:#4e4e4e !important;font-weight:bold !important;font-family:Arial, sans-serif !important;line-height:20px !important;padding:0 5px 0 5px !important;}#li_ui_li_gen_1516222628995_3-container.IN-empty {display:none !important;}#li_ui_li_gen_1516222628995_3-container.IN-hidden #li_ui_li_gen_1516222628995_3 {display:none !important;}</style><script type="text/javascript" charset="utf-8" async="" src="./Création d&#39;un menu _files/button.415474f2e22cee7df272249c34e8f0b1.js.téléchargement"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{height:100%;overflow:hidden;position:fixed;width:100%}.fb_shrink_active{opacity:1;transform:scale(1, 1);transition-duration:200ms;transition-timing-function:ease-out}.fb_shrink_active:active{opacity:.5;transform:scale(.75, .75)}</style></head><body id="top" class="post-template-default single single-post postid-450 single-format-standard"><a href="https://plus.google.com/u/0/102507737620790195585?rel=author"></a><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50358536-1', 'pierre-giraud.fr');
+  ga('send', 'pageview');
+
+</script>
+
+
+	<div class="background-cover"></div>
+			<header id="theme-header" class="theme-header full-logo">
+						<div class="top-nav">
+							<span class="today-date">mercredi 17 janvier 2018</span>					
+				<div class="top-menu"><ul id="menu-top-top-menu-pierre-giraud-fr" class="menu"><li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a href="http://pierre-giraud.fr/propos/">A propos</a></li>
+<li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a href="http://pierre-giraud.fr/contact/">Contact</a></li>
+</ul><select id="top-menu-mob"><option value="#">Aller vers…</option><option value="http://pierre-giraud.fr/propos/">&nbsp;A propos</option><option value="http://pierre-giraud.fr/contact/">&nbsp;Contact</option></select></div>
+						<div class="search-block">
+						<form method="get" id="searchform" action="http://pierre-giraud.fr/">
+							<button class="search-button" type="submit" value="Recherche"></button>	
+							<input type="text" id="s" name="s" value="Recherche…" onfocus="if (this.value == &#39;Recherche…&#39;) {this.value = &#39;&#39;;}" onblur="if (this.value == &#39;&#39;) {this.value = &#39;Recherche…&#39;;}">
+						</form>
+					</div><!-- .search-block /-->
+		
+	
+			</div><!-- .top-menu /-->
+			
+		<div class="header-content">
+			<div class="logo">
+			<h2>								<a title="Pierre Giraud" href="http://pierre-giraud.fr/">
+					<img src="./Création d&#39;un menu _files/Banniere_Logo_Pierre_Giraud.png" alt="Pierre Giraud"><strong>Pierre Giraud Cours Complets et tutoriels de Programmation, Référencement, e-Commerce et e-Marketing</strong>
+				</a>
+			</h2>			</div><!-- .logo /-->
+						<div class="clear"></div>
+		</div>	
+													<nav id="main-nav">
+				<div class="container">
+					<div class="main-menu"><ul id="menu-top-menu-pierre-giraud-fr" class="menu"><li id="menu-item-39" class="menu-item  menu-item-type-custom  menu-item-object-custom  menu-item-home"><a href="http://pierre-giraud.fr/">Accueil</a></li>
+<li id="menu-item-249" class="menu-item  menu-item-type-taxonomy  menu-item-object-category  current-post-ancestor  current-menu-parent  current-post-parent"><a href="http://pierre-giraud.fr/category/programmation/">Programmation</a></li>
+<li id="menu-item-177" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="http://pierre-giraud.fr/category/referencement/">Référencement</a></li>
+<li id="menu-item-184" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="http://pierre-giraud.fr/category/marketing-social/">Marketing et Social</a></li>
+<li id="menu-item-180" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="http://pierre-giraud.fr/category/prestashop/">PrestaShop</a></li>
+<li id="menu-item-250" class="menu-item  menu-item-type-taxonomy  menu-item-object-category"><a href="http://pierre-giraud.fr/category/wordpress/">WordPress</a></li>
+<li id="menu-item-42" class="menu-item  menu-item-type-post_type  menu-item-object-page"><a href="http://pierre-giraud.fr/glossaire/">Glossaire</a></li>
+<li id="menu-item-477" class="menu-item  menu-item-type-post_type  menu-item-object-page"><a href="http://pierre-giraud.fr/forums/">Forum</a></li>
+<li id="menu-item-41" class="menu-item  menu-item-type-post_type  menu-item-object-page"><a href="http://pierre-giraud.fr/contact/">Contact</a></li>
+</ul><select id="main-menu-mob"><option value="#">Aller vers…</option><option value="http://pierre-giraud.fr/">&nbsp;Accueil</option><option value="http://pierre-giraud.fr/category/programmation/">&nbsp;Programmation</option><option value="http://pierre-giraud.fr/category/referencement/">&nbsp;Référencement</option><option value="http://pierre-giraud.fr/category/marketing-social/">&nbsp;Marketing et Social</option><option value="http://pierre-giraud.fr/category/prestashop/">&nbsp;PrestaShop</option><option value="http://pierre-giraud.fr/category/wordpress/">&nbsp;WordPress</option><option value="http://pierre-giraud.fr/glossaire/">&nbsp;Glossaire</option><option value="http://pierre-giraud.fr/forums/">&nbsp;Forum</option><option value="http://pierre-giraud.fr/contact/">&nbsp;Contact</option></select></div>									</div>
+			</nav><!-- .main-nav /-->
+					</header><!-- #header /-->
+	
+		
+	<div id="main-content" class="container">
+	<div class="content">
+		<div xmlns:v="http://rdf.data-vocabulary.org/#" id="crumbs"><span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" class="crumbs-home" href="http://pierre-giraud.fr/">Accueil</a></span> » <span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" href="http://pierre-giraud.fr/category/articles/">Articles</a></span> » <span class="current">Création d’un menu horizontal simple en HTML et en CSS</span></div>		
+	
+		
+				
+				
+						
+		<article class="post-listing post-450 post type-post status-publish format-standard has-post-thumbnail hentry category-articles category-programmation tag-menu-css tag-menu-horizontal-css tag-menu-horizontal-html tag-menu-horizontal-html-css tag-menu-html tag-menu-html-css">
+			
+			<div class="post-inner">
+				<h1 class="name post-title entry-title" itemprop="itemReviewed" itemscope="" itemtype="http://schema.org/Thing"><span itemprop="name">Création d’un menu horizontal simple en HTML et en CSS</span></h1>
+
+				
+				<div class="entry">
+					<div class="share-post">
+	<span class="share-text">Partager !</span>
+	<script>
+	window.___gcfg = {lang: 'en-US'};
+	(function(w, d, s) {
+	  function go(){
+		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+		  if (d.getElementById(id)) {return;}
+		  js = d.createElement(s); js.src = url; js.id = id;
+		  fjs.parentNode.insertBefore(js, fjs);
+		};
+		load('//connect.facebook.net/en/all.js#xfbml=1', 'fbjssdk');
+		load('https://apis.google.com/js/plusone.js', 'gplus1js');
+		load('//platform.twitter.com/widgets.js', 'tweetjs');
+	  }
+	  if (w.addEventListener) { w.addEventListener("load", go, false); }
+	  else if (w.attachEvent) { w.attachEvent("onload",go); }
+	}(window, document, 'script'));
+	</script>
+	<ul>			
+			<li><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="./Création d&#39;un menu _files/tweet_button.9c00c8ca14a8618c4db8e2c43139b138.en.html" style="position: static; visibility: visible; width: 60px; height: 20px;" data-url="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/"></iframe></li>
+				<li>
+			<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Création d&#39;un menu _files/lY4eZXm_YWu.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Création d&#39;un menu _files/lY4eZXm_YWu(1).html" style="border: none;"></iframe></div></div></div>
+			<div class="fb-like fb_iframe_widget" data-href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=110&amp;href=http%3A%2F%2Fpierre-giraud.fr%2Fcreation-dun-menu-horizontal-simple-en-html-en-css%2F&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=90"><span style="vertical-align: bottom; width: 67px; height: 20px;"><iframe name="f249abc0da327a4" width="90px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./Création d&#39;un menu _files/like.html" style="border: none; visibility: visible; width: 67px; height: 20px;" class=""></iframe></span></div>
+		</li>
+				<li style="width:80px;"><div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 32px; height: 20px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 32px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I0_1516222629397" name="I0_1516222629397" src="./Création d&#39;un menu _files/fastbutton.html" data-gapiattached="true" title="G+"></iframe></div>
+		</li>
+					<li><script src="./Création d&#39;un menu _files/in.js.téléchargement" type="text/javascript"></script><span class="IN-widget" style="line-height: 1; vertical-align: baseline; display: inline-block; text-align: center;"><span style="padding: 0px !important; margin: 0px !important; text-indent: 0px !important; display: inline-block !important; vertical-align: baseline !important; font-size: 1px !important;"><span id="li_ui_li_gen_1516222628919_0"><a id="li_ui_li_gen_1516222628919_0-link" href="javascript:void(0);"><span id="li_ui_li_gen_1516222628919_0-logo">in</span><span id="li_ui_li_gen_1516222628919_0-title"><span id="li_ui_li_gen_1516222628919_0-mark"></span><span id="li_ui_li_gen_1516222628919_0-title-text">Share</span></span></a></span></span><span style="padding: 0px !important; margin: 0px !important; text-indent: 0px !important; display: inline-block !important; vertical-align: baseline !important; font-size: 1px !important;"><span id="li_ui_li_gen_1516222628982_1-container" class="IN-right IN-hidden"><span id="li_ui_li_gen_1516222628982_1" class="IN-right"><span id="li_ui_li_gen_1516222628982_1-inner" class="IN-right"><span id="li_ui_li_gen_1516222628982_1-content" class="IN-right">0</span></span></span></span></span></span><script type="IN/Share+init" data-url="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/" data-counter="right"></script></li>
+			</ul>
+	<div class="clear"></div>
+</div> <!-- .share-post -->					
+					<p><iframe width="560" height="315" src="./Création d&#39;un menu _files/G9KjrZ55vnw.html" frameborder="0" allowfullscreen=""></iframe></p>
+<p>Aujourd’hui, nous allons apprendre à créer un menu horizontal simple en HTML et en CSS.</p>
+<p>Pour suivre ce tutoriel, je présuppose que vous avez déjà des bases en HTML et en CSS. Si ce n’est pas le cas, n’hésitez pas à d’abord regarder mon cours complet traitant de ces deux langages de programmation.</p>
+<h2>Comprendre ce qu’est un menu</h2>
+<p>Un menu, c’est avant tout une liste de liens ramenant (dans la majorité des cas) vers d’autres pages de votre site.</p>
+<p>Pour créer un menu en HTML et en CSS, nous allons donc utiliser un élément ul correspondant à une liste non-ordonnée.</p>
+<p>Chaque élément de notre liste sera matérialisé sous forme d’un lien ramenant vers une autre page de notre site.</p>
+<h2>Créer le squelette de notre menu en HTML</h2>
+<p>Commençons donc par créer le squelette de notre menu. On va imaginer un menu comportant quatre éléments.</p>
+<p>Je commence donc par créer quatre autres pages que je vais appeler admettons blog.html, shop.html, apropos.html et contact.html pour mon exemple.</p>
+<p><a href="./Création d&#39;un menu _files/menu1.png"><img src="./Création d&#39;un menu _files/menu1.png" alt="On commence par créer des pages pour notre menu HTML" width="500" height="193" class="alignnone size-full wp-image-462" srcset="http://pierre-giraud.fr/wp-content/uploads/2014/11/menu1.png 500w, http://pierre-giraud.fr/wp-content/uploads/2014/11/menu1-300x115.png 300w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+<p>Je n’écris que le strict minimum dans ces pages, à savoir la structure minimale d’une page en HTML et une ligne de texte : encore une fois, c’est pour l’exemple. Evidemment, vous, vous devriez avoir d’autres pages déjà existantes. </p>
+<p>Ensuite, je crée ma liste dans ma page accueil.html qui représente la page d’accueil de mon site. Dans chaque élément de ma liste, je crée donc un lien relatif vers une autre page de mon site. </p>
+<p><a href="./Création d&#39;un menu _files/menu2.png"><img src="./Création d&#39;un menu _files/menu2.png" alt="On cree notre menu en HTML en utilisant ul" width="500" height="249" class="alignnone size-full wp-image-461" srcset="http://pierre-giraud.fr/wp-content/uploads/2014/11/menu2.png 500w, http://pierre-giraud.fr/wp-content/uploads/2014/11/menu2-300x149.png 300w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+<p>Nous avons donc pour le moment une liste classique de liens. On peut tester ; on s’aperçoit que tout fonctionne bien. </p>
+<p><a href="./Création d&#39;un menu _files/menu3.png"><img src="./Création d&#39;un menu _files/menu3.png" alt="Notre menu est une liste " width="500" height="168" class="alignnone size-full wp-image-454" srcset="http://pierre-giraud.fr/wp-content/uploads/2014/11/menu3.png 500w, http://pierre-giraud.fr/wp-content/uploads/2014/11/menu3-300x100.png 300w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+<h2>Styliser notre menu avec le CSS</h2>
+<p>Maintenant, on va s’attaquer  à la mise en forme de notre menu grâce au CSS. </p>
+<p>Tout d’abord, nous allons entourer notre menu avec des balises HTML &lt;nav&gt; qui ont été créées spécifiquement pour les menus et qui va vous permettre de ne cibler que la liste correspondant à votre menu en CSS. Nous allons également lier un fichier menu.css à notre page accueil.html. </p>
+<p><a href="./Création d&#39;un menu _files/menu4.png"><img src="./Création d&#39;un menu _files/menu4.png" alt="On entoure notre menu avec nav" width="500" height="299" class="alignnone size-full wp-image-459" srcset="http://pierre-giraud.fr/wp-content/uploads/2014/11/menu4.png 500w, http://pierre-giraud.fr/wp-content/uploads/2014/11/menu4-300x179.png 300w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+<p>La première chose à faire en CSS va être de supprimer les puces de notre menu et d’effectuer un reset CSS des marges intérieures et extérieures afin que notre menu s’affiche exactement de la même façon dans tous les navigateurs. </p>
+<p>Voici comment on va faire cela : </p>
+<p><a href="./Création d&#39;un menu _files/menu5.png"><img src="./Création d&#39;un menu _files/menu5.png" alt="On supprime les puces de notre menu" width="500" height="115" class="alignnone size-full wp-image-458" srcset="http://pierre-giraud.fr/wp-content/uploads/2014/11/menu5.png 500w, http://pierre-giraud.fr/wp-content/uploads/2014/11/menu5-300x69.png 300w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+<p><a href="./Création d&#39;un menu _files/menu6.png"><img src="./Création d&#39;un menu _files/menu6.png" alt="Notre menu ne possede plus de puces" width="500" height="150" class="alignnone size-full wp-image-460" srcset="http://pierre-giraud.fr/wp-content/uploads/2014/11/menu6.png 500w, http://pierre-giraud.fr/wp-content/uploads/2014/11/menu6-300x90.png 300w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+<p>Ensuite, on veut que les éléments de notre menu se placent les uns à côté des autres et non pas les uns sous les autres.</p>
+<p>Pour faire cela, nous allons devoir modifier le comportement par défaut des éléments li. Par défaut, ces éléments sont de type block. On va modifier leur type en inline-block grâce à la propriété display. </p>
+<p><a href="./Création d&#39;un menu _files/menu7.png"><img src="./Création d&#39;un menu _files/menu7.png" alt="On remet notre menu horizontalement avec display" width="500" height="311" class="alignnone size-full wp-image-457" srcset="http://pierre-giraud.fr/wp-content/uploads/2014/11/menu7.png 500w, http://pierre-giraud.fr/wp-content/uploads/2014/11/menu7-300x186.png 300w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+<p>Ensuite, on peut harmoniser la taille des éléments de notre menu avec les propriétés width et height. On peut également leur appliquer des bordures légères sur nos éléments de liste. </p>
+<p><a href="./Création d&#39;un menu _files/menu8.png"><img src="./Création d&#39;un menu _files/menu8.png" alt="On harmonise nos éléments li" width="500" height="398" class="alignnone size-full wp-image-456" srcset="http://pierre-giraud.fr/wp-content/uploads/2014/11/menu8.png 500w, http://pierre-giraud.fr/wp-content/uploads/2014/11/menu8-300x238.png 300w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+<p>On s’aperçoit alors qu’il y a un petit écart entre les éléments (normalement, les différents éléments devraient être collés à la bordure sur leur gauche). </p>
+<p>Ceci n’est pas un bug à proprement parler : il faut savoir que cela arrive à chaque fois que l’on utilise le type inline-block en CSS. </p>
+<p>Pour y remédier, il suffit de supprimer les espaces dans notre code entre les éléments en question, en collant des commentaires au milieu par exemple. </p>
+<p>Cette technique paraît un peu farfelue, j’en conviens, mais elle à le mérite de fonctionner.</p>
+<p><a href="./Création d&#39;un menu _files/menu9.png"><img src="./Création d&#39;un menu _files/menu9.png" alt="ON supprimer les espaces entre les éléments li" width="500" height="352" class="alignnone size-full wp-image-455" srcset="http://pierre-giraud.fr/wp-content/uploads/2014/11/menu9.png 500w, http://pierre-giraud.fr/wp-content/uploads/2014/11/menu9-300x211.png 300w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+<p>On peut continuer et centrer le texte horizontalement à l’intérieur de nos éléments avec la propriété text-align. </p>
+<p>On peut également le centrer verticalement en rusant un peu en appliquant un line-height avec une valeur égale à la valeur de la propriété height à nos éléments li. </p>
+<p>On peut encore supprimer la mise en forme par défaut des liens avec les propriétés text-decoration et color et ajouter une couleur de fond à notre menu. </p>
+<p><a href="./Création d&#39;un menu _files/menu10.png"><img src="./Création d&#39;un menu _files/menu10.png" alt="ON met en forme nos liens et notre menu " width="500" height="578" class="alignnone size-full wp-image-453" srcset="http://pierre-giraud.fr/wp-content/uploads/2014/11/menu10.png 500w, http://pierre-giraud.fr/wp-content/uploads/2014/11/menu10-259x300.png 259w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+<p>On va maintenant faire en sorte que les liens occupent tout l’espace à l’intérieur des éléments li afin que vos visiteurs puissent cliquer n’importe où sur votre menu. Pour cela, on va transformer leur type en type block.</p>
+<p><a href="./Création d&#39;un menu _files/menu11.png"><img src="./Création d&#39;un menu _files/menu11.png" alt="On change le type de nos éléments a" width="500" height="602" class="alignnone size-full wp-image-452" srcset="http://pierre-giraud.fr/wp-content/uploads/2014/11/menu11.png 500w, http://pierre-giraud.fr/wp-content/uploads/2014/11/menu11-249x300.png 249w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+<p>Finalement, on peut appliquer un style différent aux éléments de notre menu lorsque vos visiteurs passent leur souris dessus en utilisant le pseudo-format :hover.</p>
+<p><a href="./Création d&#39;un menu _files/menu12.png"><img src="./Création d&#39;un menu _files/menu12.png" alt="On utilise le pseudo format :hover pour dynamiser notre menu" width="500" height="602" class="alignnone size-full wp-image-451" srcset="http://pierre-giraud.fr/wp-content/uploads/2014/11/menu12.png 500w, http://pierre-giraud.fr/wp-content/uploads/2014/11/menu12-249x300.png 249w" sizes="(max-width: 500px) 100vw, 500px"></a></p>
+<p>Voilà, c’est tout pour notre menu simple ! Prochaine étape : créer un menu déroulant ou responsive. Nous verrons tout cela prochainement ! </p>
+										
+					
+									</div><!-- .entry /-->
+				<span style="display:none"><a href="http://pierre-giraud.fr/tag/menu-css/" rel="tag">menu css</a> <a href="http://pierre-giraud.fr/tag/menu-horizontal-css/" rel="tag">menu horizontal css</a> <a href="http://pierre-giraud.fr/tag/menu-horizontal-html/" rel="tag">menu horizontal html</a> <a href="http://pierre-giraud.fr/tag/menu-horizontal-html-css/" rel="tag">menu horizontal html css</a> <a href="http://pierre-giraud.fr/tag/menu-html/" rel="tag">menu html</a> <a href="http://pierre-giraud.fr/tag/menu-html-css/" rel="tag">menu html css</a></span>				<span style="display:none" class="updated">2014-12-15</span>
+								<div style="display:none" class="vcard author" itemprop="author" itemscope="" itemtype="http://schema.org/Person"><strong class="fn" itemprop="name"><a href="http://pierre-giraud.fr/author/pierregiraud/" title="Articles par Pierre Giraud" rel="author">Pierre Giraud</a></strong></div>
+								
+				<div class="share-post">
+	<span class="share-text">Partager !</span>
+	<script>
+	window.___gcfg = {lang: 'en-US'};
+	(function(w, d, s) {
+	  function go(){
+		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+		  if (d.getElementById(id)) {return;}
+		  js = d.createElement(s); js.src = url; js.id = id;
+		  fjs.parentNode.insertBefore(js, fjs);
+		};
+		load('//connect.facebook.net/en/all.js#xfbml=1', 'fbjssdk');
+		load('https://apis.google.com/js/plusone.js', 'gplus1js');
+		load('//platform.twitter.com/widgets.js', 'tweetjs');
+	  }
+	  if (w.addEventListener) { w.addEventListener("load", go, false); }
+	  else if (w.attachEvent) { w.attachEvent("onload",go); }
+	}(window, document, 'script'));
+	</script>
+	<ul>			
+			<li><iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="./Création d&#39;un menu _files/tweet_button.9c00c8ca14a8618c4db8e2c43139b138.en(1).html" style="position: static; visibility: visible; width: 60px; height: 20px;" data-url="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/"></iframe></li>
+				<li>
+			<div id="fb-root"></div>
+			<div class="fb-like fb_iframe_widget" data-href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=110&amp;href=http%3A%2F%2Fpierre-giraud.fr%2Fcreation-dun-menu-horizontal-simple-en-html-en-css%2F&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=90"><span style="vertical-align: bottom; width: 67px; height: 20px;"><iframe name="f139306faf9baac" width="90px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./Création d&#39;un menu _files/like(1).html" style="border: none; visibility: visible; width: 67px; height: 20px;" class=""></iframe></span></div>
+		</li>
+				<li style="width:80px;"><div id="___plusone_1" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 32px; height: 20px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 32px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I1_1516222629462" name="I1_1516222629462" src="./Création d&#39;un menu _files/fastbutton(1).html" data-gapiattached="true" title="G+"></iframe></div>
+		</li>
+					<li><script src="./Création d&#39;un menu _files/in.js.téléchargement" type="text/javascript"></script><span class="IN-widget" style="line-height: 1; vertical-align: baseline; display: inline-block; text-align: center;"><span style="padding: 0px !important; margin: 0px !important; text-indent: 0px !important; display: inline-block !important; vertical-align: baseline !important; font-size: 1px !important;"><span id="li_ui_li_gen_1516222628989_2"><a id="li_ui_li_gen_1516222628989_2-link" href="javascript:void(0);"><span id="li_ui_li_gen_1516222628989_2-logo">in</span><span id="li_ui_li_gen_1516222628989_2-title"><span id="li_ui_li_gen_1516222628989_2-mark"></span><span id="li_ui_li_gen_1516222628989_2-title-text">Share</span></span></a></span></span><span style="padding: 0px !important; margin: 0px !important; text-indent: 0px !important; display: inline-block !important; vertical-align: baseline !important; font-size: 1px !important;"><span id="li_ui_li_gen_1516222628995_3-container" class="IN-right IN-hidden"><span id="li_ui_li_gen_1516222628995_3" class="IN-right"><span id="li_ui_li_gen_1516222628995_3-inner" class="IN-right"><span id="li_ui_li_gen_1516222628995_3-content" class="IN-right">0</span></span></span></span></span></span><script type="IN/Share+init" data-url="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/" data-counter="right"></script></li>
+			</ul>
+	<div class="clear"></div>
+</div> <!-- .share-post -->
+			</div><!-- .post-inner -->
+		</article><!-- .post-listing -->
+		
+		
+				
+				
+		
+						
+		<div class="post-navigation">
+			<div class="post-previous"><a href="http://pierre-giraud.fr/developpez-sites-web-dynamiques-php-mysql/" rel="prev"><span>Précédent :</span> Développez des sites web dynamiques avec PhP et MySQL [Tuto en cours]</a></div>
+			<div class="post-next"><a href="http://pierre-giraud.fr/optimiser-referencement-google-2015/" rel="next"><span>Suivant :</span> Optimiser son référencement en 2015</a></div>
+		</div><!-- .post-navigation -->
+			
+		
+		
+				<div id="comments">
+
+			<h3 id="comments-title">
+			11 commentaires			</h3>
+
+										<ol class="commentlist">	<li id="comment-10437">
+		<div class="comment even thread-even depth-1 comment-wrap">
+			<div class="comment-avatar"><img alt="" src="./Création d&#39;un menu _files/635b6832d74427aeb3459566ba371d83" srcset="http://0.gravatar.com/avatar/635b6832d74427aeb3459566ba371d83?s=90&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-45 photo" height="45" width="45"></div>
+			<div class="author-comment">
+				<cite class="fn">Abdelatif</cite>				<div class="comment-meta commentmetadata"><a href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/#comment-10437">	10 mai 2015 at 3:28  </a></div><!-- .comment-meta .commentmetadata -->
+			</div>
+			<div class="clear"></div>
+			<div class="comment-content">
+									
+				<p>Merci Pierre pour la simplicité.<br>
+Tout a marché pour moi,<br>
+Un seul détail: pour le code CSS, j n’ai pas utilisé un fichier externe, j’ai intégré le tout dans le fichier .html.</p>
+<p>Abdelatif (Algérie)</p>
+			</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/?replytocom=10437#respond" onclick="return addComment.moveForm( &quot;comment-10437&quot;, &quot;10437&quot;, &quot;respond&quot;, &quot;450&quot; )" aria-label="Répondre à Abdelatif">Répondre</a></div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+	<li id="comment-4375">
+		<div class="comment odd alt thread-odd thread-alt depth-1 comment-wrap">
+			<div class="comment-avatar"><img alt="" src="./Création d&#39;un menu _files/81d2a49e5f2789a0ea6fcaf7ed4e9eb1" srcset="http://2.gravatar.com/avatar/81d2a49e5f2789a0ea6fcaf7ed4e9eb1?s=90&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-45 photo" height="45" width="45"></div>
+			<div class="author-comment">
+				<cite class="fn">Folly</cite>				<div class="comment-meta commentmetadata"><a href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/#comment-4375">	25 mars 2015 at 2:44  </a></div><!-- .comment-meta .commentmetadata -->
+			</div>
+			<div class="clear"></div>
+			<div class="comment-content">
+									
+				<p>Salut Pierre<br>
+Juste te dire un grand merci pour ces vidéos. J’ai commencé le  cours html cette semaine et j’avoue je ne pigeais rien du tout. Grâce à tes vidéos et surtout ta méthodologie j’ai compris beaucoup de choses et commence par voir plus loin. Merci et bonne continuation</p>
+			</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/?replytocom=4375#respond" onclick="return addComment.moveForm( &quot;comment-4375&quot;, &quot;4375&quot;, &quot;respond&quot;, &quot;450&quot; )" aria-label="Répondre à Folly">Répondre</a></div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+	<li id="comment-3526">
+		<div class="comment even thread-even depth-1 comment-wrap">
+			<div class="comment-avatar"><img alt="" src="./Création d&#39;un menu _files/abf3ec352a3e066dd1379609640156d5" srcset="http://1.gravatar.com/avatar/abf3ec352a3e066dd1379609640156d5?s=90&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-45 photo" height="45" width="45"></div>
+			<div class="author-comment">
+				<cite class="fn"><a href="http://gmail/" rel="external nofollow" class="url">mbex</a></cite>				<div class="comment-meta commentmetadata"><a href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/#comment-3526">	8 février 2015 at 2:44  </a></div><!-- .comment-meta .commentmetadata -->
+			</div>
+			<div class="clear"></div>
+			<div class="comment-content">
+									
+				<p>bonjour<br>
+est ce que vous pouver ecrire une programmation complete menu horizontal en guise d exemple, je suis un amateur j ai suivi les etapes mais je n ai pas de resultat.<br>
+merci</p>
+			</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/?replytocom=3526#respond" onclick="return addComment.moveForm( &quot;comment-3526&quot;, &quot;3526&quot;, &quot;respond&quot;, &quot;450&quot; )" aria-label="Répondre à mbex">Répondre</a></div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li id="comment-3538">
+		<div class="comment byuser comment-author-pierregiraud bypostauthor odd alt depth-2 comment-wrap">
+			<div class="comment-avatar"><img alt="" src="./Création d&#39;un menu _files/3d4dced1142f11372f320dbedb7857b8" srcset="http://0.gravatar.com/avatar/3d4dced1142f11372f320dbedb7857b8?s=90&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-45 photo" height="45" width="45"></div>
+			<div class="author-comment">
+				<cite class="fn"><a href="http://pierre-giraud.fr/" rel="external nofollow" class="url">Pierre Giraud</a></cite>				<div class="comment-meta commentmetadata"><a href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/#comment-3538">	11 février 2015 at 6:30  </a></div><!-- .comment-meta .commentmetadata -->
+			</div>
+			<div class="clear"></div>
+			<div class="comment-content">
+									
+				<p>Bonjour,</p>
+<p>C’est déjà ce que je fais dans ma vidéo il me semble… Si vous voulez que je vous fournisse un fichier déjà tout fait, la réponse est non : je suis là pour apprendre aux gens à coder, pas pour coder à leur place <img draggable="false" class="emoji" alt="🙂" src="./Création d&#39;un menu _files/1f642.svg"></p>
+<p>Amicalement,<br>
+Pierre</p>
+			</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/?replytocom=3538#respond" onclick="return addComment.moveForm( &quot;comment-3538&quot;, &quot;3538&quot;, &quot;respond&quot;, &quot;450&quot; )" aria-label="Répondre à Pierre Giraud">Répondre</a></div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li id="comment-3419">
+		<div class="comment even thread-odd thread-alt depth-1 comment-wrap">
+			<div class="comment-avatar"><img alt="" src="./Création d&#39;un menu _files/611851e9561920bb929294e9e909d630" srcset="http://0.gravatar.com/avatar/611851e9561920bb929294e9e909d630?s=90&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-45 photo" height="45" width="45"></div>
+			<div class="author-comment">
+				<cite class="fn"><a href="http://encoursdeconstruction.../" rel="external nofollow" class="url">pascal B</a></cite>				<div class="comment-meta commentmetadata"><a href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/#comment-3419">	21 janvier 2015 at 1:19  </a></div><!-- .comment-meta .commentmetadata -->
+			</div>
+			<div class="clear"></div>
+			<div class="comment-content">
+									
+				<p>Bonjour Pierre,<br>
+Merci tout d’abord pour vos tutos clairs et précis.<br>
+Après avoir suivi votre cours sur html5 et css3 je me suis dit tiens je vais faire un menu horizontal mais je n’obtiens rien en mettant list-style-type:none; dans la page de style.css j’ai toujours les puces a cote …<br>
+j’ai remis votre syntaxe je suis sous ubuntu 14.04 lts, firefox et gedit.<br>
+Merci pour vos conseils</p>
+			</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/?replytocom=3419#respond" onclick="return addComment.moveForm( &quot;comment-3419&quot;, &quot;3419&quot;, &quot;respond&quot;, &quot;450&quot; )" aria-label="Répondre à pascal B">Répondre</a></div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li id="comment-3434">
+		<div class="comment byuser comment-author-pierregiraud bypostauthor odd alt depth-2 comment-wrap">
+			<div class="comment-avatar"><img alt="" src="./Création d&#39;un menu _files/3d4dced1142f11372f320dbedb7857b8" srcset="http://0.gravatar.com/avatar/3d4dced1142f11372f320dbedb7857b8?s=90&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-45 photo" height="45" width="45"></div>
+			<div class="author-comment">
+				<cite class="fn"><a href="http://pierre-giraud.fr/" rel="external nofollow" class="url">Pierre Giraud</a></cite>				<div class="comment-meta commentmetadata"><a href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/#comment-3434">	24 janvier 2015 at 11:14  </a></div><!-- .comment-meta .commentmetadata -->
+			</div>
+			<div class="clear"></div>
+			<div class="comment-content">
+									
+				<p>Bonjour, </p>
+<p>Vérifiez bien que vous appliquez la propriété CSS aux bons éléments. N’hésitez pas à revoir bien en détail mon cours sur la création d’un menu en HTML et CSS. sans plus d’informations, je ne peux pas vraiment vous en dire plus, désolé… </p>
+<p>Amicalement,<br>
+Pierre</p>
+			</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/?replytocom=3434#respond" onclick="return addComment.moveForm( &quot;comment-3434&quot;, &quot;3434&quot;, &quot;respond&quot;, &quot;450&quot; )" aria-label="Répondre à Pierre Giraud">Répondre</a></div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li id="comment-3355">
+		<div class="comment even thread-even depth-1 comment-wrap">
+			<div class="comment-avatar"><img alt="" src="./Création d&#39;un menu _files/38e7c6c9a8237e0cc04a89695ea71992" srcset="http://0.gravatar.com/avatar/38e7c6c9a8237e0cc04a89695ea71992?s=90&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-45 photo" height="45" width="45"></div>
+			<div class="author-comment">
+				<cite class="fn"><a href="http://www.dolway.com/" rel="external nofollow" class="url">galhano</a></cite>				<div class="comment-meta commentmetadata"><a href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/#comment-3355">	14 janvier 2015 at 2:08  </a></div><!-- .comment-meta .commentmetadata -->
+			</div>
+			<div class="clear"></div>
+			<div class="comment-content">
+									
+				<p>Un très grand merci Pierre pour partager votre talent<br>
+dite moi ce que vous pensez de ma barre menu<br>
+Paulo</p>
+			</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/?replytocom=3355#respond" onclick="return addComment.moveForm( &quot;comment-3355&quot;, &quot;3355&quot;, &quot;respond&quot;, &quot;450&quot; )" aria-label="Répondre à galhano">Répondre</a></div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li id="comment-3367">
+		<div class="comment byuser comment-author-pierregiraud bypostauthor odd alt depth-2 comment-wrap">
+			<div class="comment-avatar"><img alt="" src="./Création d&#39;un menu _files/3d4dced1142f11372f320dbedb7857b8" srcset="http://0.gravatar.com/avatar/3d4dced1142f11372f320dbedb7857b8?s=90&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-45 photo" height="45" width="45"></div>
+			<div class="author-comment">
+				<cite class="fn"><a href="http://pierre-giraud.fr/" rel="external nofollow" class="url">Pierre Giraud</a></cite>				<div class="comment-meta commentmetadata"><a href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/#comment-3367">	14 janvier 2015 at 7:49  </a></div><!-- .comment-meta .commentmetadata -->
+			</div>
+			<div class="clear"></div>
+			<div class="comment-content">
+									
+				<p>Bonjour et merci pour votre commentaire. Je trouve votre menu tout à fait réussi, bravo !</p>
+			</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/?replytocom=3367#respond" onclick="return addComment.moveForm( &quot;comment-3367&quot;, &quot;3367&quot;, &quot;respond&quot;, &quot;450&quot; )" aria-label="Répondre à Pierre Giraud">Répondre</a></div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li id="comment-2769">
+		<div class="comment even thread-odd thread-alt depth-1 comment-wrap">
+			<div class="comment-avatar"><img alt="" src="./Création d&#39;un menu _files/4ff5ddebd5d56bb14629f6a35d511185" srcset="http://1.gravatar.com/avatar/4ff5ddebd5d56bb14629f6a35d511185?s=90&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-45 photo" height="45" width="45"></div>
+			<div class="author-comment">
+				<cite class="fn">#teamgiraud</cite>				<div class="comment-meta commentmetadata"><a href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/#comment-2769">	21 novembre 2014 at 4:41  </a></div><!-- .comment-meta .commentmetadata -->
+			</div>
+			<div class="clear"></div>
+			<div class="comment-content">
+									
+				<p>Superbe tuto comme tous les autres d’ailleurs. J’ai suivi la série html &amp; css entièrement et j’ai attaqué la série php maintenant. Un très grand merci, j’ai appris énormément.  J’ai hâte de voir arriver les tutos pour la création des autres types de menu. Bonne coontinuation.</p>
+			</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/?replytocom=2769#respond" onclick="return addComment.moveForm( &quot;comment-2769&quot;, &quot;2769&quot;, &quot;respond&quot;, &quot;450&quot; )" aria-label="Répondre à #teamgiraud">Répondre</a></div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+	<li id="comment-2755">
+		<div class="comment odd alt thread-even depth-1 comment-wrap">
+			<div class="comment-avatar"><img alt="" src="./Création d&#39;un menu _files/d01774ed731240715e6525b7c188fb4e" srcset="http://1.gravatar.com/avatar/d01774ed731240715e6525b7c188fb4e?s=90&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-45 photo" height="45" width="45"></div>
+			<div class="author-comment">
+				<cite class="fn"><a href="http://cedre-mathematique.blogpost.nl/" rel="external nofollow" class="url">said</a></cite>				<div class="comment-meta commentmetadata"><a href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/#comment-2755">	18 novembre 2014 at 9:05  </a></div><!-- .comment-meta .commentmetadata -->
+			</div>
+			<div class="clear"></div>
+			<div class="comment-content">
+									
+				<p>Merci de vos précieux conseils .</p>
+			</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/?replytocom=2755#respond" onclick="return addComment.moveForm( &quot;comment-2755&quot;, &quot;2755&quot;, &quot;respond&quot;, &quot;450&quot; )" aria-label="Répondre à said">Répondre</a></div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+	<li id="comment-2751">
+		<div class="comment even thread-odd thread-alt depth-1 comment-wrap">
+			<div class="comment-avatar"><img alt="" src="./Création d&#39;un menu _files/c10c45fd183e02568ba8e08065de8ca1" srcset="http://0.gravatar.com/avatar/c10c45fd183e02568ba8e08065de8ca1?s=90&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-45 photo" height="45" width="45"></div>
+			<div class="author-comment">
+				<cite class="fn">clément</cite>				<div class="comment-meta commentmetadata"><a href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/#comment-2751">	18 novembre 2014 at 4:49  </a></div><!-- .comment-meta .commentmetadata -->
+			</div>
+			<div class="clear"></div>
+			<div class="comment-content">
+									
+				<p>Juste un grand merci pour ce tuto et tous les autres.<br>
+Je suis fan<br>
+Clément</p>
+			</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/?replytocom=2751#respond" onclick="return addComment.moveForm( &quot;comment-2751&quot;, &quot;2751&quot;, &quot;respond&quot;, &quot;450&quot; )" aria-label="Répondre à clément">Répondre</a></div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+</ol>
+			    
+							
+
+
+	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Répondre <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/#respond" style="display:none;">Annuler la réponse</a></small></h3>			<form action="http://pierre-giraud.fr/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p class="comment-notes">Votre adresse email ne sera pas publiée. Les champs obligatoires sont marqués d'une étoile <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Commentaire</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><p class="comment-form-author"><label for="author">Nom</label> <span class="required">*</span><input id="author" name="author" type="text" value="" size="30" aria-required="true"></p>
+<p class="comment-form-email"><label for="email">Email</label> <span class="required">*</span><input id="email" name="email" type="text" value="" size="30" aria-required="true"></p>
+<p class="comment-form-url"><label for="url">Site web</label><input id="url" name="url" type="text" value="" size="30"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Laisser un commentaire"> <input type="hidden" name="comment_post_ID" value="450" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>			</form>
+			</div><!-- #respond -->
+	
+</div><!-- #comments -->
+	
+	</div><!-- .content -->
+<aside id="sidebar">
+<div id="paypal_donations-2" class="widget widget_paypal_donations"><div class="widget-top"><h4>Un petit geste ?</h4><div class="stripe-line"></div></div>
+						<div class="widget-container"><p>Mes tutoriels vous ont aidé ? Aidez-moi à vous en fournir d'autres ! </p>
+<!-- Begin PayPal Donations by https://www.tipsandtricks-hq.com/paypal-donations-widgets-plugin -->
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <div class="paypal-donations">
+        <input type="hidden" name="cmd" value="_donations">
+        <input type="hidden" name="bn" value="TipsandTricks_SP">
+        <input type="hidden" name="business" value="pierre.giraud@edhec.com">
+        <input type="hidden" name="return" value="http://pierre-giraud.fr">
+        <input type="hidden" name="rm" value="0">
+        <input type="hidden" name="currency_code" value="EUR">
+        <input type="image" src="./Création d&#39;un menu _files/btn_donate_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online.">
+        <img alt="" src="./Création d&#39;un menu _files/pixel.gif" width="1" height="1">
+    </div>
+</form>
+<!-- End PayPal Donations -->
+</div></div><!-- .widget /--><div id="ads300_250-widget-3" class="widget ads300_250-widget"><div class="widget-top"><h4> Cela pourrait vous intéresser</h4><div class="stripe-line"></div></div>
+						<div class="widget-container">		<div class="ads300-250">
+								<div class="ad-cell">
+				<script async="" src="./Création d&#39;un menu _files/adsbygoogle.js.téléchargement"></script>
+<!-- 300*250 (1) PG -->
+<ins class="adsbygoogle" style="display:inline-block;width:250px;height:250px" data-ad-client="ca-pub-8384266137058067" data-ad-slot="8731202431" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:250px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:250px;background-color:transparent;"><iframe width="250" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:250px;height:250px;" src="./Création d&#39;un menu _files/saved_resource.html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			</div>
+				</div>
+	</div></div><!-- .widget /--><div id="ads300_250-widget-4" class="widget ads300_250-widget"><div class="widget-top"><h4>Ca aussi ! </h4><div class="stripe-line"></div></div>
+						<div class="widget-container">		<div class="ads300-250">
+								<div class="ad-cell">
+				<script async="" src="./Création d&#39;un menu _files/adsbygoogle.js.téléchargement"></script>
+<!-- 300*250 (2) PG -->
+<ins class="adsbygoogle" style="display:inline-block;width:250px;height:250px" data-ad-client="ca-pub-8384266137058067" data-ad-slot="1207935631" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:250px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:250px;background-color:transparent;"><iframe width="250" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;width:250px;height:250px;" src="./Création d&#39;un menu _files/saved_resource(1).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			</div>
+				</div>
+	</div></div><!-- .widget /--><div id="ads160_600-widget-2" class="widget ads160_600-widget"><div class="widget-top"><h4>Et peut-être même ça ? </h4><div class="stripe-line"></div></div>
+						<div class="widget-container">		<div class="ads160-600">
+								<div class="ad-cell">
+				<script async="" src="./Création d&#39;un menu _files/adsbygoogle.js.téléchargement"></script>
+<!-- Adsense_1_160-600 -->
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-8384266137058067" data-ad-slot="3257617234" data-adsbygoogle-status="done"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><ins id="aswift_2_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><iframe width="160" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;width:160px;height:600px;" src="./Création d&#39;un menu _files/saved_resource(2).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			</div>
+				</div>
+	</div></div><!-- .widget /--><div id="author-bio-widget-2" class="widget Author-Bio"><div class="widget-top"><h4>Je suis…</h4><div class="stripe-line"></div></div>
+						<div class="widget-container">			<div class="author-avatar">
+				<img alt="" src="./Création d&#39;un menu _files/Avatar-Pierre-Giraud.jpg">
+			</div>
+			<div class="author-description">
+			<p style="text-align:justify;">Pierre. Diplômé d'un master 2 entrepreneuriat et passionné par le web et les start-ups, j'ai beaucoup étudié les thématiques du référencement et du e-commerce. J'ai travaillé pour des boîtes comme PrestaShop et ai déjà monté 5 entreprises. 
+Aujourd'hui, je mets mes connaissances à votre disposition pour vous accompagner dans votre réussite. </p>			</div><div class="clear"></div>
+			</div></div><!-- .widget /-->		<div class="widget widget-counter col4">
+			<ul>
+							<li class="rss-subscribers">
+					<a href="http://pierre-giraud.fr/feed" target="_blank">
+						<strong class="tieicon-rss"></strong>
+						<span>S'abonner</span>
+						<small>Vers les liens RSS</small>
+					</a>
+				</li>
+										<li class="twitter-followers">
+					<a href="http://www.twitter.com/pierregird" target="_blank">
+						<strong class="tieicon-twitter"></strong>
+						<span>530</span>
+						<small>Suiveurs</small>
+					</a>
+				</li>
+										<li class="facebook-fans">
+					<a href="https://www.facebook.com/PierreGiraud.fr" target="_blank">
+						<strong class="tieicon-facebook"></strong>
+						<span>670</span>
+						<small>Fans</small>
+					</a>
+				</li>
+										<li class="youtube-subs">
+					<a href="https://www.youtube.com/channel/UCsFoQ4A9CZbF3qag317uZZQ" target="_blank">
+						<strong class="tieicon-youtube"></strong>
+						<span>3,689</span>
+						<small>Abonnés</small>
+					</a>
+				</li>
+													
+						
+			</ul>
+		</div>
+		
+	<div id="ads250_250-widget-2" class="widget ads250_250-widget"><div class="widget-top"><h4> Sponsor</h4><div class="stripe-line"></div></div>
+						<div class="widget-container">		<div class="ads250-250">
+								<div class="ad-cell">
+				<a href="http://www.siteground.com/web-hosting.htm?afbannercode=5cb392c849c0c01d9a3d998af328286a" target="_blank">					<img src="./Création d&#39;un menu _files/250x250.gif" alt="">
+				</a>			</div>
+				</div>
+	</div></div><!-- .widget /--><div id="ads300_250-widget-2" class="widget ads300_250-widget"><div class="widget-top"><h4> Sponsor</h4><div class="stripe-line"></div></div>
+						<div class="widget-container">		<div class="ads300-250">
+								<div class="ad-cell">
+				<a href="http://www.bluehost.com/track/cookmemaybe/" target="_blank">					<img src="./Création d&#39;un menu _files/bh-ppc-banners-dynamic-300x250.png" alt="">
+				</a>			</div>
+				</div>
+	</div></div><!-- .widget /--><div id="google-widget-2" class="widget google-widget"><div class="widget-top"><h4>Suivez-moi sur Google + !		</h4><div class="stripe-line"></div></div>
+						<div class="widget-container">			<div class="google-box">
+				<!-- Google +1 script -->
+				<script type="text/javascript">
+				  (function() {
+					var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+					po.src = 'https://apis.google.com/js/plusone.js';
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+				  })();
+				</script>
+				<!-- Link blog to Google+ page -->
+				<a style="display: block; height: 0;" href="https://plus.google.com/102507737620790195585/posts" rel="publisher">&nbsp;</a>
+				<!-- Google +1 Page badge -->
+				<div id="___plus_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 280px; height: 106px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 280px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 106px;" tabindex="0" vspace="0" width="100%" id="I2_1516222629489" name="I2_1516222629489" src="./Création d&#39;un menu _files/badge.html" data-gapiattached="true" title="+Badge"></iframe></div>
+
+			</div>
+	</div></div><!-- .widget /--></aside>	<div class="clear"></div>
+</div><!-- .container /-->
+
+<footer id="theme-footer">
+	<div id="footer-widget-area" class="footer-4c">
+
+			<div id="footer-first" class="footer-widgets-box">
+			<div id="posts-list-widget-2" class="footer-widget posts-list"><div class="footer-widget-top"><h4>Tutoriels populaires		</h4></div>
+						<div class="footer-widget-container">				<ul>
+								<li>
+						
+				<div class="post-thumbnail">
+					<a href="http://pierre-giraud.fr/apprenez-coder-en-html-en-css/" title="Permaliens vers Apprenez à coder en HTML et en CSS !" rel="bookmark"><img width="55" height="55" src="./Création d&#39;un menu _files/Cours-Complet-HTML-CSS-55x55.png" class="attachment-tie-small size-tie-small" alt="Apprenez à coder en HTML et en CSS !" title="Apprenez à coder en HTML et en CSS !" srcset="http://pierre-giraud.fr/wp-content/uploads/2014/11/Cours-Complet-HTML-CSS-55x55.png 55w, http://pierre-giraud.fr/wp-content/uploads/2014/11/Cours-Complet-HTML-CSS-150x150.png 150w, http://pierre-giraud.fr/wp-content/uploads/2014/11/Cours-Complet-HTML-CSS.png 300w" sizes="(max-width: 55px) 100vw, 55px"><span class="overlay-icon"></span></a>
+				</div><!-- post-thumbnail /-->
+							<h3><a href="http://pierre-giraud.fr/apprenez-coder-en-html-en-css/" title="Apprenez à coder en HTML et en CSS !">Apprenez à coder en HTML et en CSS !</a></h3>
+				 <span class="date"><span>15 novembre 2014</span></span>
+			</li>
+				<li>
+						
+				<div class="post-thumbnail">
+					<a href="http://pierre-giraud.fr/quel-hebergeur-hebergement-choisir-site-internet/" title="Permaliens vers Quel Hébergeur et Hébergement Choisir pour votre Site Internet ?" rel="bookmark"><img width="55" height="55" src="./Création d&#39;un menu _files/Hebergement-web-Prestashop-55x55.jpg" class="attachment-tie-small size-tie-small" alt="Quel Hébergeur et Hébergement Choisir pour votre Site Internet ?" title="Quel Hébergeur et Hébergement Choisir pour votre Site Internet ?" srcset="http://pierre-giraud.fr/wp-content/uploads/2014/09/Hebergement-web-Prestashop-55x55.jpg 55w, http://pierre-giraud.fr/wp-content/uploads/2014/09/Hebergement-web-Prestashop-150x150.jpg 150w, http://pierre-giraud.fr/wp-content/uploads/2014/09/Hebergement-web-Prestashop.jpg 300w" sizes="(max-width: 55px) 100vw, 55px"><span class="overlay-icon"></span></a>
+				</div><!-- post-thumbnail /-->
+							<h3><a href="http://pierre-giraud.fr/quel-hebergeur-hebergement-choisir-site-internet/" title="Quel Hébergeur et Hébergement Choisir pour votre Site Internet ?">Quel Hébergeur et Hébergement Choisir pour votre Site Internet ?</a></h3>
+				 <span class="date"><span>1 novembre 2014</span></span>
+			</li>
+				<li>
+						
+				<div class="post-thumbnail">
+					<a href="http://pierre-giraud.fr/installer-prestashop-en-local/" title="Permaliens vers Installer PrestaShop en Local" rel="bookmark"><img width="55" height="55" src="./Création d&#39;un menu _files/Installer-PrestaShop-en-Local-55x55.png" class="attachment-tie-small size-tie-small" alt="Installer PrestaShop en Local" title="Installer PrestaShop en Local" srcset="http://pierre-giraud.fr/wp-content/uploads/2014/05/Installer-PrestaShop-en-Local-55x55.png 55w, http://pierre-giraud.fr/wp-content/uploads/2014/05/Installer-PrestaShop-en-Local-150x150.png 150w, http://pierre-giraud.fr/wp-content/uploads/2014/05/Installer-PrestaShop-en-Local.png 300w" sizes="(max-width: 55px) 100vw, 55px"><span class="overlay-icon"></span></a>
+				</div><!-- post-thumbnail /-->
+							<h3><a href="http://pierre-giraud.fr/installer-prestashop-en-local/" title="Installer PrestaShop en Local">Installer PrestaShop en Local</a></h3>
+				 <span class="date"><span>15 septembre 2014</span></span>
+			</li>
+				<li>
+						
+				<div class="post-thumbnail">
+					<a href="http://pierre-giraud.fr/developpez-sites-web-dynamiques-php-mysql/" title="Permaliens vers Développez des sites web dynamiques avec PhP et MySQL [Tuto en cours]" rel="bookmark"><img width="55" height="55" src="./Création d&#39;un menu _files/Cours-Complet-PhP-MySQL-55x55.png" class="attachment-tie-small size-tie-small" alt="Développez des sites web dynamiques avec PhP et MySQL [Tuto en cours]" title="Développez des sites web dynamiques avec PhP et MySQL [Tuto en cours]" srcset="http://pierre-giraud.fr/wp-content/uploads/2014/11/Cours-Complet-PhP-MySQL-55x55.png 55w, http://pierre-giraud.fr/wp-content/uploads/2014/11/Cours-Complet-PhP-MySQL-150x150.png 150w, http://pierre-giraud.fr/wp-content/uploads/2014/11/Cours-Complet-PhP-MySQL.png 250w" sizes="(max-width: 55px) 100vw, 55px"><span class="overlay-icon"></span></a>
+				</div><!-- post-thumbnail /-->
+							<h3><a href="http://pierre-giraud.fr/developpez-sites-web-dynamiques-php-mysql/" title="Développez des sites web dynamiques avec PhP et MySQL [Tuto en cours]">Développez des sites web dynamiques avec PhP et MySQL [Tuto en cours]</a></h3>
+				 <span class="date"><span>1 décembre 2014</span></span>
+			</li>
+				<li>
+						
+				<div class="post-thumbnail">
+					<a href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/" title="Permaliens vers Création d’un menu horizontal simple en HTML et en CSS" rel="bookmark"><img width="55" height="55" src="./Création d&#39;un menu _files/Menu-Horizontal-HTML-CSS-55x55.png" class="attachment-tie-small size-tie-small" alt="Création d’un menu horizontal simple en HTML et en CSS" title="Création d’un menu horizontal simple en HTML et en CSS" srcset="http://pierre-giraud.fr/wp-content/uploads/2014/11/Menu-Horizontal-HTML-CSS-55x55.png 55w, http://pierre-giraud.fr/wp-content/uploads/2014/11/Menu-Horizontal-HTML-CSS-150x150.png 150w, http://pierre-giraud.fr/wp-content/uploads/2014/11/Menu-Horizontal-HTML-CSS.png 250w" sizes="(max-width: 55px) 100vw, 55px"><span class="overlay-icon"></span></a>
+				</div><!-- post-thumbnail /-->
+							<h3><a href="http://pierre-giraud.fr/creation-dun-menu-horizontal-simple-en-html-en-css/" title="Création d’un menu horizontal simple en HTML et en CSS">Création d’un menu horizontal simple en HTML et en CSS</a></h3>
+				 <span class="date"><span>15 décembre 2014</span></span>
+			</li>
+		
+				</ul>
+		<div class="clear"></div>
+	</div></div><!-- .widget /-->		</div>
+	
+			<div id="footer-second" class="footer-widgets-box">
+			<div id="recent-comments-2" class="footer-widget widget_recent_comments"><div class="footer-widget-top"><h4>Commentaires récents</h4></div>
+						<div class="footer-widget-container"><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Balde</span> dans <a href="http://pierre-giraud.fr/apprenez-coder-en-html-en-css/#comment-11503">Apprenez à coder en HTML et en CSS !</a></li><li class="recentcomments"><span class="comment-author-link"><a href="http://pierre-giraud.fr/" rel="external nofollow" class="url">Pierre Giraud</a></span> dans <a href="http://pierre-giraud.fr/installer-prestashop-en-local/#comment-11314">Installer PrestaShop en Local</a></li><li class="recentcomments"><span class="comment-author-link"><a href="http://pierre-giraud.fr/" rel="external nofollow" class="url">Pierre Giraud</a></span> dans <a href="http://pierre-giraud.fr/quelle-solution-e-commerce-choisir-prestashop-magento-shopify/#comment-11311">Quelle Solution E-Commerce Choisir : PrestaShop, Magento, Shopify, etc. ?</a></li><li class="recentcomments"><span class="comment-author-link"><a href="http://pierre-giraud.fr/" rel="external nofollow" class="url">Pierre Giraud</a></span> dans <a href="http://pierre-giraud.fr/creer-un-cv-personnalise-et-interactif-en-html-et-en-css/#comment-11310">Créer un CV personnalisé et interactif en HTML et en CSS</a></li><li class="recentcomments"><span class="comment-author-link"><a href="http://pierre-giraud.fr/" rel="external nofollow" class="url">Pierre Giraud</a></span> dans <a href="http://pierre-giraud.fr/installer-prestashop-en-local/#comment-11308">Installer PrestaShop en Local</a></li></ul></div></div><!-- .widget /-->		</div><!-- #second .widget-area -->
+	
+
+			<div id="footer-third" class="footer-widgets-box">
+			<div id="posts-list-widget-3" class="footer-widget posts-list"><div class="footer-widget-top"><h4>Articles au hasard		</h4></div>
+						<div class="footer-widget-container">				<ul>
+					<li>
+				
+		<div class="post-thumbnail">
+			<a href="http://pierre-giraud.fr/optimiser-referencement-google-2015/" title="Permaliens vers Optimiser son référencement en 2015" rel="bookmark"><img width="55" height="55" src="./Création d&#39;un menu _files/Referencement-Google-2014-55x55.png" class="attachment-tie-small size-tie-small" alt="Optimiser son référencement en 2015" title="Optimiser son référencement en 2015" srcset="http://pierre-giraud.fr/wp-content/uploads/2014/04/Referencement-Google-2014-55x55.png 55w, http://pierre-giraud.fr/wp-content/uploads/2014/04/Referencement-Google-2014-150x150.png 150w, http://pierre-giraud.fr/wp-content/uploads/2014/04/Referencement-Google-2014.png 300w" sizes="(max-width: 55px) 100vw, 55px"><span class="overlay-icon"></span></a>
+		</div><!-- post-thumbnail /-->
+		<h3><a href="http://pierre-giraud.fr/optimiser-referencement-google-2015/">Optimiser son référencement en 2015</a></h3>
+	 <span class="date"><span>1 janvier 2015</span></span>
+</li>
+<li>
+				
+		<div class="post-thumbnail">
+			<a href="http://pierre-giraud.fr/les-liens-externes-expliques-savoir-les-liens-externes/" title="Permaliens vers Les Liens Externes Expliqués : Tout Savoir sur les Liens Externes" rel="bookmark"><img width="55" height="55" src="./Création d&#39;un menu _files/Liens-Externes-Referencement-55x55.png" class="attachment-tie-small size-tie-small" alt="Les Liens Externes Expliqués : Tout Savoir sur les Liens Externes" title="Les Liens Externes Expliqués : Tout Savoir sur les Liens Externes" srcset="http://pierre-giraud.fr/wp-content/uploads/2014/05/Liens-Externes-Referencement-55x55.png 55w, http://pierre-giraud.fr/wp-content/uploads/2014/05/Liens-Externes-Referencement-150x150.png 150w, http://pierre-giraud.fr/wp-content/uploads/2014/05/Liens-Externes-Referencement-300x300.png 300w, http://pierre-giraud.fr/wp-content/uploads/2014/05/Liens-Externes-Referencement.png 350w" sizes="(max-width: 55px) 100vw, 55px"><span class="overlay-icon"></span></a>
+		</div><!-- post-thumbnail /-->
+		<h3><a href="http://pierre-giraud.fr/les-liens-externes-expliques-savoir-les-liens-externes/">Les Liens Externes Expliqués : Tout Savoir sur les Liens Externes</a></h3>
+	 <span class="date"><span>1 mai 2014</span></span>
+</li>
+<li>
+				
+		<div class="post-thumbnail">
+			<a href="http://pierre-giraud.fr/google-utilise-200-criteres-classer-les-sites/" title="Permaliens vers Google Utilise 200 Critères pour Classer les Sites !" rel="bookmark"><img width="55" height="55" src="./Création d&#39;un menu _files/Criteres-Utilises-par-Google-pour-Classer-les-Sites-55x55.png" class="attachment-tie-small size-tie-small" alt="Google Utilise 200 Critères pour Classer les Sites !" title="Google Utilise 200 Critères pour Classer les Sites !" srcset="http://pierre-giraud.fr/wp-content/uploads/2014/05/Criteres-Utilises-par-Google-pour-Classer-les-Sites-55x55.png 55w, http://pierre-giraud.fr/wp-content/uploads/2014/05/Criteres-Utilises-par-Google-pour-Classer-les-Sites-150x150.png 150w, http://pierre-giraud.fr/wp-content/uploads/2014/05/Criteres-Utilises-par-Google-pour-Classer-les-Sites-300x300.png 300w, http://pierre-giraud.fr/wp-content/uploads/2014/05/Criteres-Utilises-par-Google-pour-Classer-les-Sites.png 600w" sizes="(max-width: 55px) 100vw, 55px"><span class="overlay-icon"></span></a>
+		</div><!-- post-thumbnail /-->
+		<h3><a href="http://pierre-giraud.fr/google-utilise-200-criteres-classer-les-sites/">Google Utilise 200 Critères pour Classer les Sites !</a></h3>
+	 <span class="date"><span>15 mai 2014</span></span>
+</li>
+<li>
+				
+		<div class="post-thumbnail">
+			<a href="http://pierre-giraud.fr/quelle-solution-e-commerce-choisir-prestashop-magento-shopify/" title="Permaliens vers Quelle Solution E-Commerce Choisir : PrestaShop, Magento, Shopify, etc. ?" rel="bookmark"><img width="55" height="55" src="./Création d&#39;un menu _files/Quelle-Solution-e-commerce-choisir-55x55.png" class="attachment-tie-small size-tie-small" alt="Quelle Solution E-Commerce Choisir : PrestaShop, Magento, Shopify, etc. ?" title="Quelle Solution E-Commerce Choisir : PrestaShop, Magento, Shopify, etc. ?" srcset="http://pierre-giraud.fr/wp-content/uploads/2014/05/Quelle-Solution-e-commerce-choisir-55x55.png 55w, http://pierre-giraud.fr/wp-content/uploads/2014/05/Quelle-Solution-e-commerce-choisir-150x150.png 150w, http://pierre-giraud.fr/wp-content/uploads/2014/05/Quelle-Solution-e-commerce-choisir.png 300w" sizes="(max-width: 55px) 100vw, 55px"><span class="overlay-icon"></span></a>
+		</div><!-- post-thumbnail /-->
+		<h3><a href="http://pierre-giraud.fr/quelle-solution-e-commerce-choisir-prestashop-magento-shopify/">Quelle Solution E-Commerce Choisir : PrestaShop, Magento, Shopify, etc. ?</a></h3>
+	 <span class="date"><span>1 juin 2014</span></span>
+</li>
+<li>
+				
+		<div class="post-thumbnail">
+			<a href="http://pierre-giraud.fr/comment-voler-les-liens-externes-et-le-classement-de-vos-concurrents/" title="Permaliens vers Comment Voler les Liens Externes et le Classement de vos Concurrents" rel="bookmark"><img width="55" height="55" src="./Création d&#39;un menu _files/Voler-le-classement-de-ses-concurrents-google-55x55.png" class="attachment-tie-small size-tie-small" alt="Comment Voler les Liens Externes et le Classement de vos Concurrents" title="Comment Voler les Liens Externes et le Classement de vos Concurrents" srcset="http://pierre-giraud.fr/wp-content/uploads/2014/05/Voler-le-classement-de-ses-concurrents-google-55x55.png 55w, http://pierre-giraud.fr/wp-content/uploads/2014/05/Voler-le-classement-de-ses-concurrents-google-150x150.png 150w, http://pierre-giraud.fr/wp-content/uploads/2014/05/Voler-le-classement-de-ses-concurrents-google.png 300w" sizes="(max-width: 55px) 100vw, 55px"><span class="overlay-icon"></span></a>
+		</div><!-- post-thumbnail /-->
+		<h3><a href="http://pierre-giraud.fr/comment-voler-les-liens-externes-et-le-classement-de-vos-concurrents/">Comment Voler les Liens Externes et le Classement de vos Concurrents</a></h3>
+	 <span class="date"><span>15 juin 2014</span></span>
+</li>
+	
+				</ul>
+		<div class="clear"></div>
+	</div></div><!-- .widget /-->		</div><!-- #third .widget-area -->
+	
+			<div id="footer-fourth" class="footer-widgets-box">
+			<div id="calendar-2" class="footer-widget widget_calendar"><div class="footer-widget-top"><h4>Calendrier des tutoriels</h4></div>
+						<div class="footer-widget-container"><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar">
+	<caption>janvier 2018</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="lundi">L</th>
+		<th scope="col" title="mardi">M</th>
+		<th scope="col" title="mercredi">M</th>
+		<th scope="col" title="jeudi">J</th>
+		<th scope="col" title="vendredi">V</th>
+		<th scope="col" title="samedi">S</th>
+		<th scope="col" title="dimanche">D</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="http://pierre-giraud.fr/2015/01/">« Jan</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+	</tr>
+	<tr>
+		<td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+	</tr>
+	<tr>
+		<td>15</td><td>16</td><td id="today">17</td><td>18</td><td>19</td><td>20</td><td>21</td>
+	</tr>
+	<tr>
+		<td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+	</tr>
+	<tr>
+		<td>29</td><td>30</td><td>31</td>
+		<td class="pad" colspan="4">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></div></div><!-- .widget /-->		</div><!-- #fourth .widget-area -->
+		
+	</div><!-- #footer-widget-area -->
+	<div class="clear"></div>
+</footer><!-- .Footer /-->
+				
+<div class="clear"></div>
+<div class="footer-bottom">
+	<div class="container">
+		<div class="alignright">
+					</div>
+				<div class="social-icons icon_16">
+		<a class="ttip" href="http://pierre-giraud.fr/feed/" target="_blank" original-title="Rss"><i class="tieicon-rss"></i></a><a class="ttip" href="https://plus.google.com/102507737620790195585/posts" target="_blank" original-title="Google+"><i class="tieicon-gplus"></i></a><a class="ttip" href="https://www.facebook.com/PierreGiraud.fr" target="_blank" original-title="Facebook"><i class="tieicon-facebook"></i></a><a class="ttip" href="https://twitter.com/pierregird" target="_blank" original-title="Twitter"><i class="tieicon-twitter"></i></a><a class="ttip" href="http://www.linkedin.com/pub/pierre-giraud/55/512/682" target="_blank" original-title="LinkedIn"><i class="tieicon-linkedin"></i></a><a class="ttip" href="https://www.youtube.com/channel/UCsFoQ4A9CZbF3qag317uZZQ" target="_blank" original-title="Youtube"><i class="tieicon-youtube"></i></a>	</div>
+
+		
+		<div class="alignleft">
+					</div>
+		<div class="clear"></div>
+	</div><!-- .Container -->
+</div><!-- .Footer bottom -->
+	<div id="topcontrol" class="tieicon-up-open" title="Revenir en haut de la page" style="bottom: 15px;"></div>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/pierre-giraud.fr\/wp-json\/","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Merci de confirmer que vous n\u2019\u00eates pas un robot."}},"cached":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Création d&#39;un menu _files/scripts.js.téléchargement"></script>
+<script type="text/javascript" src="./Création d&#39;un menu _files/tie-scripts.js.téléchargement"></script>
+<script type="text/javascript" src="./Création d&#39;un menu _files/comment-reply.min.js.téléchargement"></script>
+<script type="text/javascript" src="./Création d&#39;un menu _files/wp-embed.min.js.téléchargement"></script>
+
+<iframe name="oauth2relay429642644" id="oauth2relay429642644" src="./Création d&#39;un menu _files/postmessageRelay.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Création d&#39;un menu _files/widget_iframe.9c00c8ca14a8618c4db8e2c43139b138.html" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./Création d&#39;un menu _files/saved_resource(3).html"></iframe></body></html>
